@@ -8,7 +8,7 @@ class Card:
             order_pos - position of card in 'properly' sorted deck, likely 0-len(deck)
             (possibly trying a mapped 0-10 range later, but probably not at first)
             
-            a few methods that might be useful
+            and a few methods that might be useful
         """
         
         self.name = name
