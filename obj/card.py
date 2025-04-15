@@ -16,7 +16,6 @@ class Card:
         self.rank = rank
         self.value = value
         self.order_pos = ordering
-        pass
     
     
     # getters:
@@ -41,8 +40,8 @@ class Card:
         return (
             isinstance(other, Card) and 
             self.name == other.name and 
-            self.suit and other.suit and 
-            self.rank and other.rank
+            self.suit == other.suit and 
+            self.rank == other.rank
             )
     
     
