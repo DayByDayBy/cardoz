@@ -31,14 +31,23 @@ def sloppy_riffle(deck):
 
 
 def cut(deck):
-    # find rough half way point of deck, plus or minus 5
-    pass
+    mid = len(deck)//2+ random.randint(-5,5)
+    a,b = deck[:mid], deck[mid:]
+    return a, b
 
-def cut_and_half(deck):
+def cut_and_middle(deck):
     # get two rough halves, 
     # place second half in rough middle of first half
     # return new deck
-    pass
+    
+    mid = len(deck)//2+ random.randint(-5,5)
+    a,b = deck[:mid], deck[mid:]
+    
+    a_mid = len(deck)//2+ random.randint(-3,3)
+    a1, a2 = a[:a_mid], a[a_mid:]
+    
+    return a1+b+a2
+
 
 
 
