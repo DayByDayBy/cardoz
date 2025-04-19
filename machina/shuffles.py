@@ -30,6 +30,18 @@ def sloppy_riffle(deck):
     return slop_deck
 
 
+def cut(deck):
+    # find rough half way point of deck, plus or minus 5
+    pass
+
+def cut_and_half(deck):
+    # get two rough halves, 
+    # place second half in rough middle of first half
+    # return new deck
+    pass
+
+
+
 def lambda_shuffler(deck, n, shuffle):
     return reduce(lambda d, _: shuffle(d), range(n), deck)
 
