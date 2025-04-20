@@ -3,34 +3,33 @@ from functools import reduce
 from collections import deque
 
 
-# deck = [
-    # 'a', 
-    # 'b', 
-    # 'c', 
-    # 'd', 
-    # 'e', 
-    # 'f', 
-    # 'g', 
-    # 'h', 
-    # 'i', 
-    # 'j', 
-    # 'k',
-    # 'l',
-    # 'm',
-    # 'n',
-    # ]
-
 deck = [
-0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
-11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
-21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
-31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
-41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
-51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
-61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
-71, 72, 73, 74, 75, 76, 77
+    'a', 
+    'b', 
+    'c', 
+    'd', 
+    'e', 
+    'f', 
+    'g', 
+    'h', 
+    'i', 
+    'j', 
+    'k',
+    'l',
+    'm',
+    'n',
     ]
 
+# deck = [
+# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+# 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
+# 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
+# 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
+# 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+# 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
+# 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
+# 71, 72, 73, 74, 75, 76, 77
+#     ]
 
 # riffles:
 
@@ -59,9 +58,11 @@ def sloppy_riffle(deck):
     return slop_deck
 
 
+
+
 # cuts:
 
-def strip_shuf():
+def strip_shuf(deck):
     cut_point = random.randint(1, len(deck) - 1)
     a, b = deck[:cut_point], deck[cut_point:]
     return b + a
@@ -77,6 +78,53 @@ def cut_and_middle(deck):
     a_mid = len(a)//2 + random.randint(-2,2)
     a1, a2 = a[:a_mid], a[a_mid:]    
     return a1 + b + a2
+
+def overhand_shuf(deck):
+    shuf_deck = []
+    while deck:
+        if random.random() < 0.5:
+            shuf_deck.append(deck.pop(0))
+        else:
+            shuf_deck.append(deck.pop(random.randint(0, len(deck) - 1)))
+    return shuf_deck
+
+# human_error:
+
+def drop_card_error(deck):
+    if random.random() < 0.125:
+        drop_point = random.randint(0, len(deck) - 1)
+        dropped_card = deck.pop(drop_point)
+        new_position = random.randint(0, len(deck))
+        deck.insert(new_position, dropped_card)
+    return deck
+
+
+# pregame:
+def game_hand(deck):
+    i=0
+    shuf_deck = deck
+    while i < 3:
+        shuf_deck = strip_shuf(shuf_deck)
+        
+        shuf_deck = sloppy_riffle(shuf_deck)
+        
+        shuf_deck = cut_and_middle(shuf_deck)
+        shuf_deck = drop_card_error(shuf_deck)
+        shuf_deck = overhand_shuf(shuf_deck)
+        
+        shuf_deck = close_riffle(shuf_deck)
+        
+        shuf_deck = cut_and_middle(shuf_deck)
+        shuf_deck = drop_card_error(shuf_deck)
+        shuf_deck = overhand_shuf(shuf_deck)
+        
+        shuf_deck = perfect_riffle(shuf_deck)
+        
+        shuf_deck = strip_shuf(shuf_deck)
+        i+=1
+        print(i, ': \n', shuf_deck)
+    return shuf_deck    
+
 
 
 # 1000:
@@ -106,13 +154,12 @@ def thou_strip(deck):
     while i < 1000:
         shuf_deck = strip_shuf()
         i+=1
-        print(shuf_deck)
+        print(i, ': \n', shuf_deck)
     return shuf_deck
     
     
-        
-        
-        
+    
+    
 
 def lambda_shuffler(deck, n, shuffle):
     return reduce(lambda d, _: shuffle(d), range(n), deck)
@@ -121,7 +168,7 @@ def lambda_shuffler(deck, n, shuffle):
 
 def main():
     
-    print('stripthou: ', thou_strip(deck))    
+    print('game: ', game_hand(deck))    
     
     # print('close: ', lambda_shuffler(deck, 9, close_riffle))
     # print('sloppy: ', lambda_shuffler(deck, 9, sloppy_riffle))
