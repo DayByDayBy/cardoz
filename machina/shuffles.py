@@ -88,6 +88,15 @@ def overhand_shuf(deck):
             shuf_deck.append(deck.pop(random.randint(0, len(deck) - 1)))
     return shuf_deck
 
+
+# def overhand_shuf(deck):
+#     shuf_deck = []
+#     while deck:
+#         i = random.randint(0, len(deck) - 1)
+#         shuf_deck.append(deck.pop(i))
+#     return shuf_deck
+
+
 # human_error:
 
 def drop_card_error(deck):
@@ -100,7 +109,7 @@ def drop_card_error(deck):
 
 
 # pregame:
-def game_hand(deck):
+def game_hand(deck):    # sorta simulating a 'throrough shuffle' that one might do before a game or spread
     i=0
     shuf_deck = deck
     while i < 3:
@@ -112,11 +121,13 @@ def game_hand(deck):
         shuf_deck = drop_card_error(shuf_deck)
         shuf_deck = overhand_shuf(shuf_deck)
         
+        shuf_deck = strip_shuf(shuf_deck)
+        
         shuf_deck = close_riffle(shuf_deck)
         
-        shuf_deck = cut_and_middle(shuf_deck)
+        shuf_deck = overhand_shuf(shuf_deck)        
         shuf_deck = drop_card_error(shuf_deck)
-        shuf_deck = overhand_shuf(shuf_deck)
+        shuf_deck = cut_and_middle(shuf_deck)
         
         shuf_deck = perfect_riffle(shuf_deck)
         
@@ -124,6 +135,20 @@ def game_hand(deck):
         i+=1
         print(i, ': \n', shuf_deck)
     return shuf_deck    
+
+
+def rolling_overhand(deck):  
+    shuf_deck = deck
+    i=0
+    while i < 10:
+        overhand_shuf(shuf_deck)
+        i+=1
+    return shuf_deck
+    
+
+
+
+
 
 
 
@@ -135,7 +160,7 @@ def thousand_cuts(deck):
     while i < 100:
         shuf_deck = cut_and_middle(deck)
         i+=1
-        print(shuf_deck)
+        # print(shuf_deck)
     return shuf_deck
     
     
@@ -145,7 +170,7 @@ def thou_cut_with_riffles(deck):
         shuf_deck = cut_and_middle(deck)
         shuf_deck = sloppy_riffle(shuf_deck)
         i+=1
-        print(shuf_deck, '\n')
+        # print(shuf_deck, '\n')
     return shuf_deck
 
 def thou_strip(deck): 
@@ -154,7 +179,7 @@ def thou_strip(deck):
     while i < 1000:
         shuf_deck = strip_shuf()
         i+=1
-        print(i, ': \n', shuf_deck)
+        # print(i, ': \n', shuf_deck)
     return shuf_deck
     
     
