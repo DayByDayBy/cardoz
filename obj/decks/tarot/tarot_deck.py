@@ -1,4 +1,4 @@
-[
+tarot_deck = [
     {
       "type": "major",
       "nameShort": "ar01",
