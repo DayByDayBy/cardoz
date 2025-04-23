@@ -88,6 +88,14 @@ def overhand_shuf(deck):
             shuf_deck.append(deck.pop(random.randint(0, len(deck) - 1)))
     return shuf_deck
 
+def rolling_overhand(deck):  
+    shuf_deck = deck
+    i=0
+    while i < 10:
+        overhand_shuf(shuf_deck)
+        i+=1
+    return shuf_deck
+
 
 # def overhand_shuf(deck):
 #     shuf_deck = []
@@ -137,15 +145,29 @@ def game_hand(deck):    # sorta simulating a 'throrough shuffle' that one might 
     return shuf_deck    
 
 
-def rolling_overhand(deck):  
-    shuf_deck = deck
-    i=0
-    while i < 10:
-        overhand_shuf(shuf_deck)
-        i+=1
-    return shuf_deck
+
     
 
+
+def game_clean():    # naming is hard, but this is basically just a variant 'pre-game' shuffler
+    
+    i=0
+    shuf_deck = deck
+    while i < 3:
+        shuf_deck = strip_shuf(shuf_deck)
+        
+        shuf_deck = cut_and_middle(shuf_deck)
+        shuf_deck = rolling_overhand(shuf_deck)
+        shuf_deck = cut_and_middle(shuf_deck)
+        shuf_deck = drop_card_error(shuf_deck)
+        shuf_deck = overhand_shuf(shuf_deck)
+                
+        shuf_deck = close_riffle(shuf_deck)
+        
+        i+=1
+        print(i, ': \n', shuf_deck)
+    return shuf_deck    
+    
 
 
 
