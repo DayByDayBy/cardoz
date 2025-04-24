@@ -1,4 +1,4 @@
-import shuffles
+from .....cards_.machina import shuffles
 
 import tarot_deck
 
