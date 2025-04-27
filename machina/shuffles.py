@@ -145,7 +145,7 @@ def game_hand(deck):    # sorta simulating a 'thorough shuffle' that one might d
     return shuf_deck    
 
 
-def game_clean(deck):    # naming is hard, but this is basically just a variant 'pre-game' shuffler
+def #:    # naming is hard, but this is basically just a variant 'pre-game' shuffler
     
     i=0
     shuf_deck = deck
