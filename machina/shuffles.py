@@ -3,6 +3,15 @@ from functools import reduce
 from collections import deque
 
 
+#  using dummy deck data to test, eventual dataset will be a list of dict objects that represents
+#  each card, so there are keys in common and values represent each card (with null as an option
+#  for 'suit', so that the schema works for both major arcana and minor)
+
+# dummies are just lists, because shuffling functionality will just rearrange those elements, 
+# so it really doesnt need to be more than that until it starts looking as intended, and 
+# proper 'dress rehearsal' testing makes sense
+
+
 # deck = [
 #     'a', 
 #     'b', 
