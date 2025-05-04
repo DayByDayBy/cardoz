@@ -26,4 +26,12 @@
 #  added 'suit' to major, streamlined and simplified very slightly, 
 #  but tbh the design could still do with work
 
+# wondering if there's any sense in making a more generic card list 
+# schema - playing cards don't really need it, suit and number is enough but maybe some 
+# depth could be added. eg could add 'colour', even tho it's 1:1 with suit, could allow for 
+# different sorts/shuffles/etc to be done, or where you want an even split of the deck; could 
+# also add weights and values from various games, but that seems better left to the game mechanics 
+# themselves, could get complicated otherwise
+
+
 # thought: could also maybe add other frameworks/relationships people ascribe to tarot
