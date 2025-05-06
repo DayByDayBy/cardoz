@@ -1,6 +1,7 @@
 [{
     "type": "major",
     "suit": None,
+    "value": None,
     "nameShort": "ar01",
     "name": "The Magician",
     "position": 1,
@@ -12,9 +13,10 @@
  {
     "type": "minor",
     "suit": "wands",
+    "value": 4,
     "nameShort": "wa04",
     "name": "Four of Wands",
-    "position": 4,
+    "position": 25,
     "meaningUp": "They are for once almost on the surface--country life, haven of refuge, a species of domestic harvest-home, repose, concord, harmony, prosperity, peace, and the perfected work of these.",
     "meaningRev": "The meaning remains unaltered; it is prosperity, increase, felicity, beauty, embellishment.",
     "description": "From the four great staves planted in the foreground there is a great garland suspended; two female figures uplift nosegays; at their side is a bridge over a moat, leading to an old manorial house."
@@ -35,3 +37,4 @@
 
 
 # thought: could also maybe add other frameworks/relationships people ascribe to tarot
+

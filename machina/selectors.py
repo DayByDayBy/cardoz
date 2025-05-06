@@ -1,27 +1,48 @@
 import random
 
-deck = [1, 2, 3, 4, 5, 6, 7, 8]
+deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 def draw_n(deck, n):
     hand = random.sample(deck, n)
     print(hand)
     
-def draw_3_spread(deck):
+def draw_3(deck):
     spread =random.sample(deck,3)
-    print(spread)
+    return spread
     
-def draw_cross(deck):
+def draw_10(deck):
     spread =random.sample(deck,10)
-    print(spread)
+    return spread
+    
+# def celtic_cross(deck):
+#     drawn_cards = draw_10(deck)
+#     rev = False
+    
+#     for card in drawn_cards:
+#         spread = [
+#             (x, y) 
+#             for x, y 
+#             in zip(drawn_cards[card], rev)
+#             ]
+        
+        
+def celtic_cross(deck):
+    drawn_cards = draw_10(deck)
+    spread = [(card, random.choice([False, True])) for card in drawn_cards]
+    return spread
+
+
+
 
     
-       
+    
+
 def main ():
-    draw_n(deck, 3)
-    draw_3_spread(deck)
-    # draw_cross(deck)    ## won't run with small list test var
-    
-    
+    celtic_cross(deck)
+
+
+
+
 if __name__ == "__main__":
     main()
     
