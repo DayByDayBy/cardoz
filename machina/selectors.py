@@ -6,9 +6,24 @@ def draw_n(deck, n):
     hand = random.sample(deck, n)
     print(hand)
     
+def draw_n(deck, n):
+    available_indices = list(range(len(deck)))
+    random.shuffle(available_indices)
+    selected_indices = available_indices[:n]
+    return [deck[i] for i in selected_indices]    
+
+    
+# def draw_3(deck):
+#     spread =random.sample(deck,3)
+#     return spread
+
 def draw_3(deck):
-    spread =random.sample(deck,3)
-    return spread
+    available_indices = list(range(len(deck)))
+    random.shuffle(available_indices)
+    selected_indices = available_indices[:3]
+    return [deck[i] for i in selected_indices]
+
+
 
 # quick and dirty ten draw:
     
@@ -24,7 +39,7 @@ def draw_10(deck):
     selected_indices = available_indices[:10]
     return [deck[i] for i in selected_indices]
 
-    
+
 # def celtic_cross(deck):
 #     drawn_cards = draw_10(deck)
 #     rev = False
