@@ -9,10 +9,21 @@ def draw_n(deck, n):
 def draw_3(deck):
     spread =random.sample(deck,3)
     return spread
+
+# quick and dirty ten draw:
     
+# def draw_10(deck):
+#     spread =random.sample(deck,10)
+#     return spread
+
+# a better 10 draw:
+
 def draw_10(deck):
-    spread =random.sample(deck,10)
-    return spread
+    available_indices = list(range(len(deck)))
+    random.shuffle(available_indices)
+    selected_indices = available_indices[:10]
+    return [deck[i] for i in selected_indices]
+
     
 # def celtic_cross(deck):
 #     drawn_cards = draw_10(deck)
