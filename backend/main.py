@@ -1,4 +1,3 @@
-# main.py - Application entry point
 import uvicorn
 from backend.api import app
 
