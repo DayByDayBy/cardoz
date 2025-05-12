@@ -38,3 +38,52 @@
 
 # thought: could also maybe add other frameworks/relationships people ascribe to tarot
 
+
+
+
+# some SQL thoughts...
+
+
+# readings (
+#   id INTEGER PRIMARY KEY,
+#   user_id INTEGER REFERENCES users(id),
+#   question TEXT,
+#   spread_type TEXT,
+#   deck_id TEXT,
+#   prompt_version TEXT,
+#   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+#   output_text TEXT,
+#   user_notes TEXT
+# )
+
+# and
+
+# reading_cards (
+#   id INTEGER PRIMARY KEY,
+#   reading_id INTEGER REFERENCES readings(id),
+#   position INTEGER,
+#   name_short TEXT,
+#   name TEXT,
+#   meaning_up TEXT,
+#   meaning_rev TEXT,
+#   is_reversed BOOLEAN,
+#   notes TEXT
+# )
+
+# and obvs for all that, will need cards:   
+
+# cards (
+#   id INTEGER PRIMARY KEY,
+#   name_short TEXT UNIQUE,
+#   name TEXT,
+#   type TEXT,
+#   suit TEXT,
+#   value INTEGER,
+#   position INTEGER,
+#   meaning_up TEXT,
+#   meaning_rev TEXT,
+#   description TEXT,
+#   keywords TEXT[], -- or TEXT if serialized
+#   deck_id TEXT,
+#   image_url TEXT
+# )
