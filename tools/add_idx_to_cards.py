@@ -29,3 +29,23 @@ print("]")
 # meaningRev,
 # description
 
+# and atm i think a spread_card object, sth like:
+
+    # {
+    # "type": "major",
+    # "suit": None,
+    # "value": None,
+    # "nameShort": "ar01",
+    # "name": "The Magician",
+    # "position": 1,
+    # "rev": False;
+    # "meaning": "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
+    # }
+
+# those values can all be derived from the main object except rev, 
+# which will be a product of the drawing of the card
+# 
+# for each card in spread:
+#   type, etc = type, etc 
+#   rev  = random.choice(True, False)
+#   meaning = meainingRev if rev, else meaningUp
