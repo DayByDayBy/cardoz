@@ -1,8 +1,9 @@
 [
   {
-    "nameShort": "ar00",
+    "short_name": "ar00",
     "name": "The Fool",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 0,
     "meaning_up": "Folly, mania, extravagance, intoxication, delirium, frenzy, bewrayment.",
@@ -14,12 +15,14 @@
       "extravagance",
       "intoxication"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar00.jpg"
   },
   {
-    "nameShort": "ar01",
+    "short_name": "ar01",
     "name": "The Magician",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 1,
     "meaning_up": "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
@@ -31,12 +34,14 @@
       "address",
       "subtlety"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar01.jpg"
   },
   {
-    "nameShort": "ar02",
+    "short_name": "ar02",
     "name": "The High Priestess",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 2,
     "meaning_up": "Secrets, mystery, the future as yet unrevealed; the woman who interests the Querent, if male; the Querent herself, if female; silence, tenacity; mystery, wisdom, science.",
@@ -48,12 +53,14 @@
       "secrets",
       "future"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar02.jpg"
   },
   {
-    "nameShort": "ar03",
+    "short_name": "ar03",
     "name": "The Empress",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 3,
     "meaning_up": "Fruitfulness, action, initiative, length of days; the unknown, clandestine; also difficulty, doubt, ignorance.",
@@ -65,12 +72,14 @@
       "initiative",
       "length"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar03.jpg"
   },
   {
-    "nameShort": "ar04",
+    "short_name": "ar04",
     "name": "The Emperor",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 4,
     "meaning_up": "Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will.",
@@ -82,12 +91,14 @@
       "power",
       "protection"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar04.jpg"
   },
   {
-    "nameShort": "ar05",
+    "short_name": "ar05",
     "name": "The Hierophant",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 5,
     "meaning_up": "Marriage, alliance, captivity, servitude; by another account, mercy and goodness; inspiration; the man to whom the Querent has recourse.",
@@ -99,12 +110,14 @@
       "captivity",
       "servitude"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar05.jpg"
   },
   {
-    "nameShort": "ar06",
+    "short_name": "ar06",
     "name": "The Lovers",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 6,
     "meaning_up": "Attraction, love, beauty, trials overcome.",
@@ -116,12 +129,14 @@
       "beauty",
       "trials"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar06.jpg"
   },
   {
-    "nameShort": "ar07",
+    "short_name": "ar07",
     "name": "The Chariot",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 7,
     "meaning_up": "Succour, providence also war, triumph, presumption, vengeance, trouble.",
@@ -133,12 +148,14 @@
       "also",
       "war"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar07.jpg"
   },
   {
-    "nameShort": "ar08",
+    "short_name": "ar08",
     "name": "Fortitude",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 8,
     "meaning_up": "Power, energy, action, courage, magnanimity; also complete success and honours.",
@@ -150,12 +167,14 @@
       "action",
       "courage"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar08.jpg"
   },
   {
-    "nameShort": "ar09",
+    "short_name": "ar09",
     "name": "The Hermit",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 9,
     "meaning_up": "Prudence, circumspection; also and especially treason, dissimulation, roguery, corruption.",
@@ -167,12 +186,14 @@
       "also",
       "especially"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar09.jpg"
   },
   {
-    "nameShort": "ar10",
+    "short_name": "ar10",
     "name": "Wheel Of Fortune",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 10,
     "meaning_up": "Destiny, fortune, success, elevation, luck, felicity.",
@@ -184,12 +205,14 @@
       "success",
       "elevation"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar10.jpg"
   },
   {
-    "nameShort": "ar11",
+    "short_name": "ar11",
     "name": "Justice",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 11,
     "meaning_up": "Equity, rightness, probity, executive; triumph of the deserving side in law.",
@@ -201,12 +224,14 @@
       "rightness",
       "probity"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar11.jpg"
   },
   {
-    "nameShort": "ar12",
+    "short_name": "ar12",
     "name": "The Hanged Man",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 12,
     "meaning_up": "Wisdom, circumspection, discernment, trials, sacrifice, intuition, divination, prophecy.",
@@ -218,12 +243,14 @@
       "discernment",
       "trials"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar12.jpg"
   },
   {
-    "nameShort": "ar13",
+    "short_name": "ar13",
     "name": "Death",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 13,
     "meaning_up": "End, mortality, destruction, corruption also, for a man, the loss of a benefactor for a woman, many contrarieties; for a maid, failure of marriage projects.",
@@ -235,12 +262,14 @@
       "destruction",
       "corruption"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar13.jpg"
   },
   {
-    "nameShort": "ar14",
+    "short_name": "ar14",
     "name": "Temperance",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 14,
     "meaning_up": "Economy, moderation, frugality, management, accommodation.",
@@ -252,12 +281,14 @@
       "frugality",
       "management"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar14.jpg"
   },
   {
-    "nameShort": "ar15",
+    "short_name": "ar15",
     "name": "The Devil",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 15,
     "meaning_up": "Ravage, violence, vehemence, extraordinary efforts, force, fatality; that which is predestined but is not for this reason evil.",
@@ -269,12 +300,14 @@
       "ravage",
       "violence"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar15.jpg"
   },
   {
-    "nameShort": "ar16",
+    "short_name": "ar16",
     "name": "The Tower",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 16,
     "meaning_up": "Misery, distress, indigence, adversity, calamity, disgrace, deception, ruin. It is a card in particular of unforeseen catastrophe.",
@@ -286,12 +319,14 @@
       "indigence",
       "adversity"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar16.jpg"
   },
   {
-    "nameShort": "ar17",
+    "short_name": "ar17",
     "name": "The Star",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 17,
     "meaning_up": "Loss, theft, privation, abandonment; another reading says-hope and bright prospects,",
@@ -303,12 +338,14 @@
       "privation",
       "abandonment"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar17.jpg"
   },
   {
-    "nameShort": "ar18",
+    "short_name": "ar18",
     "name": "The Moon",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 18,
     "meaning_up": "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error.",
@@ -320,12 +357,14 @@
       "hidden",
       "enemies"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar18.jpg"
   },
   {
-    "nameShort": "ar19",
+    "short_name": "ar19",
     "name": "The Sun",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 19,
     "meaning_up": "Material happiness, fortunate marriage, contentment.",
@@ -337,12 +376,14 @@
       "fortunate",
       "marriage"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar19.jpg"
   },
   {
-    "nameShort": "ar20",
+    "short_name": "ar20",
     "name": "The Last Judgment",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 20,
     "meaning_up": "Change of position, renewal, outcome. Another account specifies total loss though lawsuit.",
@@ -354,12 +395,14 @@
       "renewal",
       "outcome"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar20.jpg"
   },
   {
-    "nameShort": "ar21",
+    "short_name": "ar21",
     "name": "The World",
     "type": "major",
+    "suit": null,
     "value": null,
     "position": 21,
     "meaning_up": "Assured success, recompense, voyage, route, emigration, flight, change of place.",
@@ -371,11 +414,12 @@
       "recompense",
       "voyage"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "ar21.jpg"
   },
   {
     "name": "Page of Wands",
-    "nameShort": "wapa",
+    "short_name": "wapa",
     "value": "page",
     "position": 22,
     "suit": "wands",
@@ -389,11 +433,12 @@
       "young",
       "faithful"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wapa.jpg"
   },
   {
     "name": "Knight of Wands",
-    "nameShort": "wakn",
+    "short_name": "wakn",
     "value": "knight",
     "position": 23,
     "suit": "wands",
@@ -407,11 +452,12 @@
       "flight",
       "emigration"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wakn.jpg"
   },
   {
     "name": "Queen of Wands",
-    "nameShort": "waqu",
+    "short_name": "waqu",
     "value": "queen",
     "position": 24,
     "suit": "wands",
@@ -425,11 +471,12 @@
       "also",
       "certain"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "waqu.jpg"
   },
   {
     "name": "King of Wands",
-    "nameShort": "waki",
+    "short_name": "waki",
     "value": "king",
     "position": 25,
     "suit": "wands",
@@ -443,11 +490,12 @@
       "friendly",
       "countryman"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "waki.jpg"
   },
   {
     "name": "Ace of Wands",
-    "nameShort": "waac",
+    "short_name": "waac",
     "value": "ace",
     "position": 26,
     "suit": "wands",
@@ -461,11 +509,12 @@
       "enterprise",
       "powers"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "waac.jpg"
   },
   {
     "name": "Two of Wands",
-    "nameShort": "wa02",
+    "short_name": "wa02",
     "value": "two",
     "position": 27,
     "suit": "wands",
@@ -479,11 +528,12 @@
       "mortification",
       "alternative"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa02.jpg"
   },
   {
     "name": "Three of Wands",
-    "nameShort": "wa03",
+    "short_name": "wa03",
     "value": "three",
     "position": 28,
     "suit": "wands",
@@ -497,11 +547,12 @@
       "strength",
       "enterprise"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa03.jpg"
   },
   {
     "name": "Four of Wands",
-    "nameShort": "wa04",
+    "short_name": "wa04",
     "value": "four",
     "position": 29,
     "suit": "wands",
@@ -515,11 +566,12 @@
       "surface",
       "country"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa04.jpg"
   },
   {
     "name": "Five of Wands",
-    "nameShort": "wa05",
+    "short_name": "wa05",
     "value": "five",
     "position": 30,
     "suit": "wands",
@@ -533,11 +585,12 @@
       "sham",
       "fight"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa05.jpg"
   },
   {
     "name": "Six of Wands",
-    "nameShort": "wa06",
+    "short_name": "wa06",
     "value": "six",
     "position": 31,
     "suit": "wands",
@@ -551,11 +604,12 @@
       "card",
       "designed"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa06.jpg"
   },
   {
     "name": "Seven of Wands",
-    "nameShort": "wa07",
+    "short_name": "wa07",
     "value": "seven",
     "position": 32,
     "suit": "wands",
@@ -569,11 +623,12 @@
       "surface",
       "six"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa07.jpg"
   },
   {
     "name": "Eight of Wands",
-    "nameShort": "wa08",
+    "short_name": "wa08",
     "value": "eight",
     "position": 33,
     "suit": "wands",
@@ -587,11 +642,12 @@
       "arrows",
       "undertakings"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa08.jpg"
   },
   {
     "name": "Nine of Wands",
-    "nameShort": "wa09",
+    "short_name": "wa09",
     "value": "nine",
     "position": 34,
     "suit": "wands",
@@ -605,11 +661,12 @@
       "strength",
       "opposition"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa09.jpg"
   },
   {
     "name": "Ten of Wands",
-    "nameShort": "wa10",
+    "short_name": "wa10",
     "value": "ten",
     "position": 35,
     "suit": "wands",
@@ -623,11 +680,12 @@
       "also",
       "success"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "wa10.jpg"
   },
   {
     "name": "Page of Cups",
-    "nameShort": "cupa",
+    "short_name": "cupa",
     "value": "page",
     "position": 36,
     "suit": "cups",
@@ -641,11 +699,12 @@
       "man",
       "one"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cupa.jpg"
   },
   {
     "name": "Knight of Cups",
-    "nameShort": "cukn",
+    "short_name": "cukn",
     "value": "knight",
     "position": 37,
     "suit": "cups",
@@ -659,11 +718,12 @@
       "sometimes",
       "messenger"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cukn.jpg"
   },
   {
     "name": "Queen of Cups",
-    "nameShort": "cuqu",
+    "short_name": "cuqu",
     "value": "queen",
     "position": 38,
     "suit": "cups",
@@ -677,11 +737,12 @@
       "fair",
       "honest"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cuqu.jpg"
   },
   {
     "name": "King of Cups",
-    "nameShort": "cuki",
+    "short_name": "cuki",
     "value": "king",
     "position": 39,
     "suit": "cups",
@@ -695,11 +756,12 @@
       "art",
       "science"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cuki.jpg"
   },
   {
     "name": "Ace of Cups",
-    "nameShort": "cuac",
+    "short_name": "cuac",
     "value": "ace",
     "position": 40,
     "suit": "cups",
@@ -713,11 +775,12 @@
       "true",
       "joy"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cuac.jpg"
   },
   {
     "name": "Two of Cups",
-    "nameShort": "cu02",
+    "short_name": "cu02",
     "value": "two",
     "position": 41,
     "suit": "cups",
@@ -731,11 +794,12 @@
       "sanctified",
       "love"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu02.jpg"
   },
   {
     "name": "Three of Cups",
-    "nameShort": "cu03",
+    "short_name": "cu03",
     "value": "three",
     "position": 42,
     "suit": "cups",
@@ -749,11 +813,12 @@
       "plenty",
       "perfection"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu03.jpg"
   },
   {
     "name": "Four of Cups",
-    "nameShort": "cu04",
+    "short_name": "cu04",
     "value": "four",
     "position": 43,
     "suit": "cups",
@@ -767,11 +832,12 @@
       "weariness",
       "disgust"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu04.jpg"
   },
   {
     "name": "Five of Cups",
-    "nameShort": "cu05",
+    "short_name": "cu05",
     "value": "five",
     "position": 44,
     "suit": "cups",
@@ -785,11 +851,12 @@
       "two",
       "dark"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu05.jpg"
   },
   {
     "name": "Six of Cups",
-    "nameShort": "cu06",
+    "short_name": "cu06",
     "value": "six",
     "position": 45,
     "suit": "cups",
@@ -803,11 +870,12 @@
       "card",
       "memories"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu06.jpg"
   },
   {
     "name": "Seven of Cups",
-    "nameShort": "cu07",
+    "short_name": "cu07",
     "value": "seven",
     "position": 46,
     "suit": "cups",
@@ -821,11 +889,12 @@
       "images",
       "reflection"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu07.jpg"
   },
   {
     "name": "Eight of Cups",
-    "nameShort": "cu08",
+    "short_name": "cu08",
     "value": "eight",
     "position": 47,
     "suit": "cups",
@@ -839,11 +908,12 @@
       "matter",
       "speaks"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu08.jpg"
   },
   {
     "name": "Nine of Cups",
-    "nameShort": "cu09",
+    "short_name": "cu09",
     "value": "nine",
     "position": 48,
     "suit": "cups",
@@ -857,11 +927,12 @@
       "physical",
       "also"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu09.jpg"
   },
   {
     "name": "Ten of Cups",
-    "nameShort": "cu10",
+    "short_name": "cu10",
     "value": "ten",
     "position": 49,
     "suit": "cups",
@@ -875,11 +946,12 @@
       "perfection",
       "also"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "cu10.jpg"
   },
   {
     "name": "Page of Pentacles",
-    "nameShort": "pepa",
+    "short_name": "pepa",
     "value": "page",
     "position": 50,
     "suit": "pentacles",
@@ -893,11 +965,12 @@
       "study",
       "scholarship"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pepa.jpg"
   },
   {
     "name": "Knight of Pentacles",
-    "nameShort": "pekn",
+    "short_name": "pekn",
     "value": "knight",
     "position": 51,
     "suit": "pentacles",
@@ -911,11 +984,12 @@
       "interest",
       "responsibility"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pekn.jpg"
   },
   {
     "name": "Queen of Pentacles",
-    "nameShort": "pequ",
+    "short_name": "pequ",
     "value": "queen",
     "position": 52,
     "suit": "pentacles",
@@ -929,11 +1003,12 @@
       "magnificence",
       "security"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pequ.jpg"
   },
   {
     "name": "King of Pentacles",
-    "nameShort": "peki",
+    "short_name": "peki",
     "value": "king",
     "position": 53,
     "suit": "pentacles",
@@ -947,11 +1022,12 @@
       "intelligence",
       "business"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "peki.jpg"
   },
   {
     "name": "Ace of Pentacles",
-    "nameShort": "peac",
+    "short_name": "peac",
     "value": "ace",
     "position": 54,
     "suit": "pentacles",
@@ -965,11 +1041,12 @@
       "whether",
       "perfect"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "peac.jpg"
   },
   {
     "name": "Two of Pentacles",
-    "nameShort": "pe02",
+    "short_name": "pe02",
     "value": "two",
     "position": 55,
     "suit": "pentacles",
@@ -983,11 +1060,12 @@
       "hand",
       "represented"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe02.jpg"
   },
   {
     "name": "Three of Pentacles",
-    "nameShort": "pe03",
+    "short_name": "pe03",
     "value": "three",
     "position": 56,
     "suit": "pentacles",
@@ -1001,11 +1079,12 @@
       "skilled",
       "labour"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe03.jpg"
   },
   {
     "name": "Four of Pentacles",
-    "nameShort": "pe04",
+    "short_name": "pe04",
     "value": "four",
     "position": 57,
     "suit": "pentacles",
@@ -1019,11 +1098,12 @@
       "cleaving",
       "one"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe04.jpg"
   },
   {
     "name": "Five of Pentacles",
-    "nameShort": "pe05",
+    "short_name": "pe05",
     "value": "five",
     "position": 58,
     "suit": "pentacles",
@@ -1037,11 +1117,12 @@
       "material",
       "trouble"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe05.jpg"
   },
   {
     "name": "Six of Pentacles",
-    "nameShort": "pe06",
+    "short_name": "pe06",
     "value": "six",
     "position": 59,
     "suit": "pentacles",
@@ -1055,11 +1136,12 @@
       "gratification",
       "another"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe06.jpg"
   },
   {
     "name": "Seven of Pentacles",
-    "nameShort": "pe07",
+    "short_name": "pe07",
     "value": "seven",
     "position": 60,
     "suit": "pentacles",
@@ -1073,11 +1155,12 @@
       "contradictory",
       "main"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe07.jpg"
   },
   {
     "name": "Eight of Pentacles",
-    "nameShort": "pe08",
+    "short_name": "pe08",
     "value": "eight",
     "position": 61,
     "suit": "pentacles",
@@ -1091,11 +1174,12 @@
       "employment",
       "commission"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe08.jpg"
   },
   {
     "name": "Nine of Pentacles",
-    "nameShort": "pe09",
+    "short_name": "pe09",
     "value": "nine",
     "position": 62,
     "suit": "pentacles",
@@ -1109,11 +1193,12 @@
       "success",
       "accomplishment"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe09.jpg"
   },
   {
     "name": "Ten of Pentacles",
-    "nameShort": "pe10",
+    "short_name": "pe10",
     "value": "ten",
     "position": 63,
     "suit": "pentacles",
@@ -1127,11 +1212,12 @@
       "riches",
       "matters"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "pe10.jpg"
   },
   {
     "name": "Page of Swords",
-    "nameShort": "swpa",
+    "short_name": "swpa",
     "value": "page",
     "position": 64,
     "suit": "swords",
@@ -1145,11 +1231,12 @@
       "overseeing",
       "secret"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "swpa.jpg"
   },
   {
     "name": "Knight of Swords",
-    "nameShort": "swkn",
+    "short_name": "swkn",
     "value": "knight",
     "position": 65,
     "suit": "swords",
@@ -1163,11 +1250,12 @@
       "capacity",
       "defence"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "swkn.jpg"
   },
   {
     "name": "Queen of Swords",
-    "nameShort": "swqu",
+    "short_name": "swqu",
     "value": "queen",
     "position": 66,
     "suit": "swords",
@@ -1181,11 +1269,12 @@
       "sadness",
       "embarrassment"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "swqu.jpg"
   },
   {
     "name": "King of Swords",
-    "nameShort": "swki",
+    "short_name": "swki",
     "value": "king",
     "position": 67,
     "suit": "swords",
@@ -1199,11 +1288,12 @@
       "idea",
       "judgment"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "swki.jpg"
   },
   {
     "name": "Ace of Swords",
-    "nameShort": "swac",
+    "short_name": "swac",
     "value": "ace",
     "position": 68,
     "suit": "swords",
@@ -1217,11 +1307,12 @@
       "excessive",
       "degree"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "swac.jpg"
   },
   {
     "name": "Two of Swords",
-    "nameShort": "sw02",
+    "short_name": "sw02",
     "value": "two",
     "position": 69,
     "suit": "swords",
@@ -1235,11 +1326,12 @@
       "suggests",
       "courage"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw02.jpg"
   },
   {
     "name": "Three of Swords",
-    "nameShort": "sw03",
+    "short_name": "sw03",
     "value": "three",
     "position": 70,
     "suit": "swords",
@@ -1253,11 +1345,12 @@
       "delay",
       "division"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw03.jpg"
   },
   {
     "name": "Four of Swords",
-    "nameShort": "sw04",
+    "short_name": "sw04",
     "value": "four",
     "position": 71,
     "suit": "swords",
@@ -1271,11 +1364,12 @@
       "solitude",
       "hermit"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw04.jpg"
   },
   {
     "name": "Five of Swords",
-    "nameShort": "sw05",
+    "short_name": "sw05",
     "value": "five",
     "position": 72,
     "suit": "swords",
@@ -1289,11 +1383,12 @@
       "revocation",
       "infamy"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw05.jpg"
   },
   {
     "name": "Six of Swords",
-    "nameShort": "sw06",
+    "short_name": "sw06",
     "value": "six",
     "position": 73,
     "suit": "swords",
@@ -1307,11 +1402,12 @@
       "route",
       "way"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw06.jpg"
   },
   {
     "name": "Seven of Swords",
-    "nameShort": "sw07",
+    "short_name": "sw07",
     "value": "seven",
     "position": 74,
     "suit": "swords",
@@ -1325,11 +1421,12 @@
       "wish",
       "hope"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw07.jpg"
   },
   {
     "name": "Eight of Swords",
-    "nameShort": "sw08",
+    "short_name": "sw08",
     "value": "eight",
     "position": 75,
     "suit": "swords",
@@ -1343,11 +1440,12 @@
       "violent",
       "chagrin"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw08.jpg"
   },
   {
     "name": "Nine of Swords",
-    "nameShort": "sw09",
+    "short_name": "sw09",
     "value": "nine",
     "position": 76,
     "suit": "swords",
@@ -1361,11 +1459,12 @@
       "miscarriage",
       "delay"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw09.jpg"
   },
   {
     "name": "Ten of Swords",
-    "nameShort": "sw10",
+    "short_name": "sw10",
     "value": "ten",
     "position": 77,
     "suit": "swords",
@@ -1379,6 +1478,7 @@
       "intimated",
       "design"
     ],
-    "deck_id": "rider_waite_classic"
+    "deck_id": "rider_waite_classic",
+    "image_url": "sw10.jpg"
   }
 ]

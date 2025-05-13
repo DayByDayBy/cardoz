@@ -1,12 +1,3 @@
--- dev etc
--- DROP TABLE IF EXISTS reading_cards;
--- DROP TABLE IF EXISTS spread_positions;
--- DROP TABLE IF EXISTS readings;
--- DROP TABLE IF EXISTS users;
--- DROP TABLE IF EXISTS cards;
-
-
-
 
 
 
@@ -27,7 +18,7 @@ CREATE TABLE decks (
 -- Cards table (reference data, static per deck)
 CREATE TABLE cards (
     id SERIAL PRIMARY KEY,
-    name_short TEXT UNIQUE NOT NULL,  -- e.g. 'ar01'
+    short_name TEXT UNIQUE NOT NULL,  -- e.g. 'ar01'
     name TEXT NOT NULL,
     type TEXT,                        -- 'major', 'minor'
     suit TEXT,
@@ -75,7 +66,7 @@ CREATE TABLE reading_cards (
     id SERIAL PRIMARY KEY,
     reading_id INTEGER REFERENCES readings(id) ON DELETE CASCADE,
     position_index INTEGER NOT NULL,      -- index in spread
-    card_id TEXT REFERENCES cards(name_short),
+    card_id INTEGER REFERENCES cards(id),
     is_reversed BOOLEAN DEFAULT FALSE,
     
     -- Snapshot of card at time of reading

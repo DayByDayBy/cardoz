@@ -1,0 +1,1 @@
+SELECT * FROM cards LIMIT 5;
