@@ -69,6 +69,16 @@
 #   is_reversed BOOLEAN,
 #   notes TEXT
 # )
+or
+# CREATE TABLE reading_cards (
+#     id INTEGER PRIMARY KEY,
+#     reading_id INTEGER NOT NULL,     -- foreign key to readings
+#     position_index INTEGER NOT NULL, -- e.g. 0, 1, 2 (spread len)
+#     card_id TEXT NOT NULL,           -- e.g. 'ar01' or similar, short name
+#     reversed BOOLEAN DEFAULT FALSE,  -- whether the card is reversed
+#     FOREIGN KEY (reading_id) REFERENCES readings(id),
+#     FOREIGN KEY (card_id) REFERENCES cards(nameShort)
+# );
 
 # and obvs for all that, will need cards:   
 
@@ -87,3 +97,13 @@
 #   deck_id TEXT,
 #   image_url TEXT
 # )
+
+#  with
+
+# SELECT rc.position_index, sp.label, c.name, c.meaningUp, c.meaningRev, rc.reversed
+# FROM reading_cards rc
+# JOIN cards c ON rc.card_id = c.nameShort
+# JOIN readings r ON rc.reading_id = r.id
+# JOIN spread_positions sp ON sp.spread_id = r.spread_id AND sp.position = rc.position_index
+# WHERE rc.reading_id = 1
+# ORDER BY rc.position_index;
