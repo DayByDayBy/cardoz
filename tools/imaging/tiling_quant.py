@@ -23,7 +23,7 @@ def nes_palette_tile_quantize(tile):
     
     # remap tile pixels to one tile_palette colors
     remapped = [
-        min(tile_palette, key=lambda c: np.sum((np.array(p) - np.array(c))**2))
+        min(tile_palette, key=lambda c: np.sum((np.array(p, dtype=int) - np.array(c, dtype=int))**2))
         for p in n_mapped
     ]
     
