@@ -19,7 +19,7 @@ def nearest_n_colour(rgb):
     return nearest_color
 
 if __name__ == "__main__":
-    pixel = (100, 1500, 200)
+    pixel = (100, 150, 200)
     closest = nearest_n_colour(pixel)
     print(f'closest: {closest}')
     

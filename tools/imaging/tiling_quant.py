@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 import colour_comparison  
 
-TILE_SIZE = 8
+TILE_SIZE = 16
 NUM_COLORS_PER_TILE = 4
 
 def get_tile(img_array, x, y):
@@ -50,4 +50,4 @@ def nesify_image_by_tile(input_path, output_path):
     Image.fromarray(output_img).save(output_path)
 
 if __name__ == "__main__":
-    nesify_image_by_tile("ar01.jpg", "nes_tiles.jpg")
+    nesify_image_by_tile("pe10.jpg", "pen_tiles.jpg")
