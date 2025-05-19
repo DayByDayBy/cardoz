@@ -27,3 +27,12 @@ for url in image_links:
     if os.path.exists(filepath):
         print(f"already downloaded {filename}")
         continue
+    
+    print(f"downloading {filename}")
+    img_response = requests.get(url)
+    img_response.raise_for_status()
+    
+    with open(filepath, "wb") as f:
+       f.write(img_response.content)
+       
+print("that's me done m8")
