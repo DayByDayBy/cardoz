@@ -1,49 +1,29 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-import time
-import os
 import requests
 from bs4 import BeautifulSoup
+import os
+from urlib.parse import urljoin
 
-#  headless Chrome
-chrome_options = Options()
-chrome_options.add_argument("--headless")
-driver = webdriver.Chrome(options=chrome_options)
+BASE_URL = "https://steve-p.org/cards/pix/"
+OUTPUT_DIR = "downloaded_tarot_cards_02"
 
-url = "https://steve-p.org/cards/RWSa.html"
-driver.get(url)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-#  time to populate the page (may need tweaked if connection is slow)
-time.sleep(5)
+response = requests.get(BASE_URL)
+response.raise_for_status()
 
-# full page source get
-soup = BeautifulSoup(driver.page_source, 'html.parser')
+soup = BeautifulSoup(response.text, "html.parser")
 
-# find imgs
-imgs = soup.find_all('img')
+image_links = [
+    urljoin(BASE_URL, a['href'])
+    for a in soup.find_all('a', href=True)
+    if a['href'].lower().endswith(".png")
+]
 
-# dir to store images
-os.makedirs('tarot_cards', exist_ok=True)
+print(f"found {len(image_links)} images")
 
-# grab all images
-for img in imgs:
-    src = img.get('src')
-    if not src:
+for url in image_links:
+    filename = url.split("/")[-1]
+    filepath = os.path.join(OUTPUT_DIR, filename)
+    if os.path.exists(filepath):
+        print(f"already downloaded {filename}")
         continue
-    # if relative, make absolute
-    if src.startswith('/'):
-        src = url.rstrip('/') + src
-    elif not src.startswith('http'):
-        src = url.rstrip('/') + '/' + src
-
-    filename = os.path.join('tarot_cards', os.path.basename(src))
-    try:
-        img_data = requests.get(src).content
-        with open(filename, 'wb') as f:
-            f.write(img_data)
-        print(f"Downloaded {filename}")
-    except Exception as e:
-        print(f"Failed to download {src}: {e}")
-
-driver.quit()
