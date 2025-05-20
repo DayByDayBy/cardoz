@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Tarot Grid Tiling</title>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    height: 100%;
+    background: #111;
+    font-family: monospace;
+    font-size: 10px;
+    line-height: 1.2;
+    overflow: hidden;
+  }
+  .background {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28ch, 1fr));
+    grid-auto-rows: calc(13 * 1.2em);
+    opacity: 0.05;
+    pointer-events: none;
+    color: white;
+  }
+  .tile {
+    white-space: pre;
+    padding: 0 1ch; /* one space padding left and right */
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+<div class="background"></div>
+
+<script>
+  const gridText = 
+` ar01ar02ar03ar04ar05ar06
+ar07ar08ar09ar10ar11ar12
+ar13ar14ar15ar16ar17ar18
+ar19ar20ar00ar21wapawakn
+waquwakiwaacwa02wa03wa04
+wa05wa06wa07wa08wa09wa10
+cupacukncuqucukicuaccu02
+cu03cu04cu05cu06cu07cu08
+cu09cu10pepapeknpequpeki
+peacpe02pe03pe04pe05pe06
+pe07pe08pe09pe10swpaswkn
+swquswkiswacsw02sw03sw04
+sw05sw06sw07sw08sw09sw10`;
+
+  const background = document.querySelector('.background');
+
+  //  how many tiles horizontally and vertically fit
+  const viewportWidthCh = window.innerWidth / 10; // 10px font size = 1ch
+  const viewportHeightEm = window.innerHeight / 12; // line-height ~12px per line
+
+  const tileWidthCh = 28;  // 26 chars + 2 ch padding
+  const tileHeightEm = 13 * 1.2; // 13 lines * line-height
+
+  const cols = Math.ceil(viewportWidthCh / tileWidthCh);
+  const rows = Math.ceil(viewportHeightEm / tileHeightEm);
+
+  for(let i=0; i < cols * rows; i++) {
+    const tile = document.createElement('div');
+    tile.className = 'tile';
+    tile.textContent = gridText;
+    background.appendChild(tile);
+  }
+</script>
+</body>
+</html>
