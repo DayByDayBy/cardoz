@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repeating String Background</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: #111;
-            font-family: 'Courier New', monospace;
-            overflow: hidden;
-            position: relative;
-        }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: #111;
+        font-family: "Courier New", monospace;
+        overflow: hidden;
+        position: relative;
+      }
 
-        .background-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            color: rgba(12, 134, 61, 0.4);
-            font-size: 10px;
-            line-height: 12px;
-            pointer-events: none;
-            z-index: -1;
-            word-wrap: break-word;
-            overflow: hidden;
-        }
+      .background-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: rgba(12, 134, 61, 0.4);
+        font-size: 10px;
+        line-height: 12px;
+        pointer-events: none;
+        z-index: -1;
+        word-wrap: break-word;
+        overflow: hidden;
+      }
 
-        .content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-            color: white;
-            font-size: 16px;
-        }
-
-        @keyframes drift {
-            0% { transform: translateX(0) translateY(0); }
-            100% { transform: translateX(-50px) translateY(-30px); }
-        }
-
-        .background-text {
-            animation: drift 20s linear infinite;
-        }
+      .content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        color: white;
+        font-size: 16px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="background-text" id="bgText"></div>
     <div class="content">
-        <p>Your content goes here</p>
+      <p>etcetc</p>
     </div>
 
-    <script>
-        function generateBackgroundText() {
-            const baseString = "ar01ar02ar03ar04ar05ar06ar07ar08ar09ar10ar11ar12ar13ar14ar15ar16ar17ar18ar19ar20ar00ar21wapawaknwaquwakiwaacwa02wa03wa04wa05wa06wa07wa08wa09wa10cupacukncuqucukicuaccu02cu03cu04cu05cu06cu07cu08cu09cu10pepapeknpequpekipeacpe02pe03pe04pe05pe06pe07pe08pe09pe10swpaswknswquswkiswacsw02sw03sw04sw05sw06sw07sw08sw09sw10";
-            
-            const screenArea = window.innerWidth * window.innerHeight;
-            const charsNeeded = Math.ceil(screenArea / 50); // Approximate chars per area
-            const repetitions = Math.ceil(charsNeeded / baseString.length);
-            
-            let repeatedText = '';
-            for (let i = 0; i < repetitions; i++) {
-                repeatedText += baseString + ' ';
-            }
-            
-            return repeatedText;
-        }
+    <script type="module">
+      import { createBackgroundPattern } from "js/backgroundPattern.js";
 
-        document.getElementById('bgText').textContent = generateBackgroundText();
-
-        window.addEventListener('resize', () => {
-            document.getElementById('bgText').textContent = generateBackgroundText();
-        });
+      const bg = createBackgroundPattern({
+        target: document.getElementById("bgText"),
+        stringToRepeat: "1234567890",
+        lightMode: false,
+      });
     </script>
-</body>
+  </body>
 </html>
